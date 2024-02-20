@@ -1,0 +1,26 @@
+First of all,
+
+Welcome to the timeless Hangman game!
+The objective is straightforward: determine the hidden word before time runs out.
+
+*Flow of the Game* :-It chooses a word at random for you to guess when you first launch the game.
+Each letter of the word will be represented by a string of dashes.
+There's a cap on how many times you can try to guess the word correctly.
+
+*Parts of the game* :
+
+main(): The general flow of the game is managed by this feature.
+It starts the game by choosing the secret word and putting up the first screen.
+After the current game ends, it also manages the choice to play again.
+
+play_loop()`: After a game is over, this function asks the player if they would want to continue playing.
+   - {hangman()}: The actual gameplay takes place in this central portion of the game.
+     The player is asked to guess a letter and is then prompted to see if it is part of the hidden word.
+     - The display is updated to show the letters that were successfully predicted.
+     - It counts the number of wrong guesses and updates the hangman image accordingly.
+
+ *Participating in the Game*: - Open the `hangman.py` file to begin playing.
+   - When one player comes up with a word, the other player attempts to predict it by offering potential letters.
+   - One letter at a time, guess until you figure out the word or run out of chances.
+
+ *Result* : - Enjoy yourself while playing Hangman and see if
